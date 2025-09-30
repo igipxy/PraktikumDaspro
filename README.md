@@ -1,4 +1,3 @@
-HALLLOOW TESTING TEST
+HALOOWW THIS IS MY REPORT
 
-this what i add in readme
-its changed to 'M'
+From semester 1 polinema
