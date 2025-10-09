@@ -10,7 +10,11 @@ public class ifcetakKRSnopresensi {
 
         if (uktLunas) {
             System.out.println("Pembayaran UKT Terferifikasi");
+        } else {
             System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA");
         }
-    }
+        
+        input.close();
+    }   
+
 }
