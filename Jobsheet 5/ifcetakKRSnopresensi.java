@@ -13,7 +13,7 @@ public class ifcetakKRSnopresensi {
         } else {
             System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA");
         }
-        
+        //tugas 1
         input.close();
     }   
 
