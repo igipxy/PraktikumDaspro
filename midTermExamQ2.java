@@ -20,8 +20,9 @@ public class midTermExamQ2 {
         age = sc.nextInt();
 
         // when input not valid
-        if ((!dayType.equals("weekday") && !dayType.equals("weekend")) || age <= 0) {
-            System.out.println("Invalid input! Please check your entries.");
+        if (!(dayType.equals("weekday") || dayType.equals("weekend")) || age <= 0 || age > 120) {
+            System.out.println("Invalid input! Please check your entries");
+            return;
         }
 
         // Base price
@@ -37,25 +38,25 @@ public class midTermExamQ2 {
 
             if (age <= 12) discount = 0.30;       // 30% off
             else if (age >= 60) discount = 0.10;  // 10% off
-            else discount = 0;                    // no discount
+            else discount = 0;                    // nuh uh discount
         }
 
-        // Apply discount
+        // Apply discount formula
         finalPrice = basePrice - (basePrice * discount);
 
-        // Apply surcharge for youth (18–25)
+        // Apply extra weekend surcharge for youth (18–25)
         if (age >= 18 && age <= 25) {
             surcharge = 0.05;
             finalPrice += basePrice * surcharge;
         }
 
-        // Output
+        // Output prikitiw
         System.out.println("--- CinemaGo Ticket Price ---");
-        System.out.println("Day Type       : " + dayType);
-        System.out.println("Age            : " + age);
-        System.out.println("Base Price     : Rp" + basePrice);
-        System.out.println("Discount       : " + (discount * 100) + "%");
-        System.out.println("Surcharge      : " + (surcharge * 100) + "%");
-        System.out.println("Final Price    : Rp" + finalPrice);
+        System.out.println("Day Type    : " + dayType);
+        System.out.println("Age         : " + age);
+        System.out.println("Base Price  : Rp" + basePrice);
+        System.out.println("Discount    : " + (discount * 100) + "%");
+        System.out.println("Surcharge   : " + (surcharge * 100) + "%");
+        System.out.println("Final Price : Rp" + finalPrice);
     }
 }
