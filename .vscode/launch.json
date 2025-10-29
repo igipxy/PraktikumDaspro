@@ -4,12 +4,21 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "type": "cmake",
+            "request": "launch",
+            "name": "CMake: Configure project",
+            "cmakeDebugType": "configure",
+            "clean": false,
+            "configureAll": false
+        },
+
         {
             "type": "java",
             "name": "SistemKelulusan",
             "request": "launch",
-            "mainClass": "SistemKelulusan",
-            "projectName": "PraktikumDaspro_2cc6de16"
+            "mainClass": "SistemKelulusan"
         },
         {
             "type": "jdk",
