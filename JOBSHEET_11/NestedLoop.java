@@ -35,6 +35,9 @@ public class NestedLoop {
             }
             double average = sum / temps[0].length;
             System.out.println("City " + i + ": " + average);
+    
         }
+        scanner.close();
     }
+
 }

@@ -31,5 +31,6 @@ public class Quizz {
             System.out.print("Do you want to repeat the game? (y/n): ");
             menu = input.nextLine().charAt(0);
         } while (menu == 'y' || menu == 'Y');
+        input.close();
     }
 }
